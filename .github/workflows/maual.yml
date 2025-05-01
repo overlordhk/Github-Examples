@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: decode file contetn
         run:
-          echo "${{ inputs.data }}" | base64 --decode > ./decoded_file.txt
+          echo "$GITHUB_WORKSPACE/${{ inputs.data }}" | base64 --decode > ./decoded_file.txt
       - name: display greeting
         run:
           echo "${{ inputs.greeting }}, ${{ inputs.name }}"
