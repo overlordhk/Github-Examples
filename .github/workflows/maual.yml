@@ -23,7 +23,7 @@ jobs:
       - name: decode file contetn
         run:
           # cat ${{ inputs.data }} | base64 --decode > ./decoded_file.txt
-          ls
+          ls | cat
       - name: display greeting
         run:
           echo "${{ inputs.greeting }}, ${{ inputs.name }}"
