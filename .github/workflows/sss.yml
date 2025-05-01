@@ -6,5 +6,5 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: echo the current time
+      - name: "echo the current time"
         run: echo "the current server time is $(date)"
