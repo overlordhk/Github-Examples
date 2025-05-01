@@ -22,7 +22,8 @@ jobs:
     steps:
       - name: decode file contetn
         run:
-          echo "${{ inputs.data }}" | base64 --decode > ./decoded_file.txt
+          # echo "${{ inputs.data }}" | base64 --decode > ./decoded_file.txt
+          pwd
       - name: display greeting
         run:
           echo "${{ inputs.greeting }}, ${{ inputs.name }}"
