@@ -14,4 +14,4 @@ jobs:
             echo "::group::my group messages"
             echo "msg1"
             echo "msg2"
-            echo "::endgroup"
+            echo "::endgroup::"
