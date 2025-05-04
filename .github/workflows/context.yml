@@ -8,6 +8,6 @@ jobs:
     steps:
     - name: step 1
       env:
-        MY_ACTION: ${{github.action}}
+        MY_ACTION: ${{github.actor}}
       run: |
         echo $MY_ACTION
