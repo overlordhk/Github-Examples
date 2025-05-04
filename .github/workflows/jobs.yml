@@ -1,0 +1,16 @@
+name: dep jobs example
+
+on: ["push"]
+
+jobs:
+  depy:
+    runs-on: ubuntu-latest
+    needs: yepy
+    steps:
+      - name: bye
+        run: echo bye
+  yepy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: echo hello
